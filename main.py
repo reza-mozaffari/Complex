@@ -38,7 +38,9 @@ if __name__ == "__main__":
 	
 	print("|C1| = ", abs(C1))
 	print("C1 radius = ", C1.radius())
+	print("C1 radius = ", radius(C1))
 	print("C1 angle = ", C1.angle(), "rad.")
+	print("C1 angle = ", angle(C1), "rad.")
 	print("C1 angle = ", C1.angle()*180.0/pi, "deg.")
 	
 	C3 = Complex(2.0, 3.0)
@@ -48,3 +50,7 @@ if __name__ == "__main__":
 	C4 = Complex(1.0, 1.0)
 	print("C4 = ", C4)
 	print("C3**C4 = ", C3**C4)
+	
+	print("2.0^C3 = ", power(2.0, C3))
+	
+	print("log(C3) = ", logc(C3))
