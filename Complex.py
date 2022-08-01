@@ -64,3 +64,16 @@ class Complex ():
 			theta = self.angle()
 			return Complex (r**other * cos(theta*other), r**other * sin(theta*other))
 
+def power (a, other):
+	C = Complex(other.x*log(a), other.y*log(a))
+	x, y  = C.x, C.y
+	return Complex (exp(x)*cos(y), exp(x)*sin(y))
+
+def radius (other): 
+	return 	other.radius()
+
+def angle (other):
+	return other.angle()
+	
+def logc (other):
+	return Complex (log(radius(other)), angle(other))
